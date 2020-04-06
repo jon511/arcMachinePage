@@ -1,0 +1,202 @@
+#mainDiv{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+
+h1{
+    text-align: center;
+}
+
+.leftColumn {
+    margin: 0 5px 0 5px;
+    grid-area: left;
+}
+
+.rightColumn {
+    grid-area: right;
+    margin: 0 5px 0 5px;
+}
+
+#addItemForm {
+    display: grid;
+    grid-template-areas: "left right";
+}
+
+#addItemForm input {
+    margin: 0;
+    width: 50%;
+    height: 20px;
+    border: none;
+    background-color: whitesmoke;
+    font-size: 1em;
+}
+
+#addItemForm textarea {
+    margin: 0;
+    width: 75%;
+    height: 40px;
+    border: none;
+    background-color: whitesmoke;
+    font-size: 1em;
+    resize: none;
+}
+
+#addItemForm select {
+    margin: 0;
+    width: 50%;
+    height: 50%;
+    border: none;
+    background-color: whitesmoke;
+    font-size: 1em;
+}
+
+.createFormClass{
+    width: 50%;
+}
+
+.inputSection {
+    background-color: whitesmoke;
+    padding-top: 5px;
+    padding-left: 5px;
+    /* height: 30px; */
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+button {
+    width: 250px;
+    height: 40px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.createFormClass input {
+    margin: 0;
+    width: 75%;
+    height: 20px;
+    border: none;
+    background-color: whitesmoke;
+    font-size: 1em;
+}
+
+.titleClass{
+    grid-area: title;
+    padding-top: 5px;
+}
+
+.programClass{
+    grid-area: program;
+    padding-top: 5px;
+}
+
+/* .lineClass {
+    grid-area: lin;
+    
+}
+.docNumClass {
+    grid-area: doc;
+}
+.revClass {
+    grid-area: rev;
+}
+.revDateClass {
+    grid-area: revDate;
+}
+.relByClass {
+    grid-area: rel;
+}
+.approvalClass {
+    grid-area: approval;
+} */
+
+.topLine {
+    grid-area: topLine;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;  
+    border-bottom: 1px solid black;
+}
+
+.bottomLine{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: bottomLine;
+}
+
+
+.sheetHeader {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-areas: 
+        "title program topLine"
+        "title program bottomLine";
+    
+    border: 1px solid black;
+}
+.sheetHeader > * {
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+.sheetHeader > * > span:nth-child(-n + 2) {
+    border-right: 1px solid black;
+}
+
+
+
+.col1 { grid-area: col1; }
+.col2 { grid-area: col2; }
+.col3 { grid-area: col3; }
+.col4 { grid-area: col4; }
+.col5 { grid-area: col5; }
+.col6 { grid-area: col6; }
+.col7 { grid-area: col7; }
+
+.sampleDivClass{
+    display: grid;
+    grid-template-columns: 3% 17% 40% 10% 10% 20%;
+    grid-template-areas: "col1 col2 col3 col4 col5 col6";
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.sampleDivClass > div {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 0 5px 0 5px;
+    text-align: center;
+}
+
+
+
+.okButton {
+    width: 50%;
+}
+
+
+.hidden {
+    display: none;
+}
+
+#frequency {
+    display: grid;
+    grid-template-columns: 30% 60%;
+}
+
+#frequency label:nth-child(n + 2) {
+    margin-left: 10px;
+}
+
+#frequency label:nth-child(1) {
+    text-decoration: underline;
+}
+
+#frequencyValue {
+    width: 10px;
+}

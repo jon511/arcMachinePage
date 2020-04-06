@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <!-- <select name="sel" id="selectId">
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">three</option>
+        <option value="10">four</option>
+    </select> -->
+    <h1>FM Create Sheet</h1>
+    <div id="mainSection"></div>
+    <div id="mainDiv">
+        <section id="leftSection"></section>
+        <section id="middleSection">
+            
+        </section>
+        <section id="rightSection"></section>
+
+        <div id="itemLine">
+            <div id="itemId" class="inputSection">
+                <label for="itemIdValue">Item Number:</label>
+                <input type="number" name="itemIdName" id="itemIdValue">
+            </div>
+            <div id="item" class="inputSection">
+                <label for="itemValue">Item To Inspect:</label>
+                <input type="text" name="itemName" id="itemValue">
+            </div>
+            <div id="requirement" class="requirementSection">
+                <label for="requirementValue">Requirement</label>
+                <textarea name="requirementName" id="requirementValue" cols="50" rows="3"></textarea>
+                <!-- <input type="text" name="requirementName" id="requirementValue"> -->
+            </div>
+            <div id="gage" class="inputSection">
+                <label for="gageValue">Gage</label>
+                <input type="text" name="gageName" id="gageValue">
+            </div>
+            <div id="responsible" class="inputSection">
+                <label for="responsibleValue">Responsible</label>
+                <input type="text" name="responsibleName" id="responsibleValue">
+            </div>
+            <div id="frequency" class="inputSection">
+                <label for="frequencyValue">Frequency</label>
+                <input type="text" name="frequencyName" id="frequencyValue">
+            </div>
+            <div id="result" class="inputSection">
+                <label for="resultValue">Result</label>
+                <select name="resultName" id="resultValue">
+                    <option value="checkbox">Checkbox</option>
+                    <option value="passFail">Pass/Fail</option>
+                    <option value="numberInput">Number</option>
+                    <option value="textInput">Text</option>
+                </select>
+            </div>
+        </div>
+    
+    </div>
+
+
+</body>
+</html>

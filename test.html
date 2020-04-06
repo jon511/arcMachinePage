@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="test.css">
+    <script defer src="fmClass.js" type="text/javascript"></script>
+    <script defer src="test.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1>FM Sheet Create Page</h1>
+    <div id="mainDiv">
+        <section id="leftSection"></section>
+        <section id="centerSection">
+            <div id="createForm" class="createFormClass">
+                <div id="fmTitle" class="inputSection">
+                    <label for="fmTitleValue">Title</label>
+                    <input type="text" name="fmTitleName" id="fmTitleValue" tabindex="1">
+                </div>
+                <div id="fmProgram" class="inputSection">
+                    <label for="fmProgramValue">Program</label>
+                    <input type="text" name="fmProgramName" id="fmProgramValue" tabindex="2">
+                </div>
+                <div id="fmLine" class="inputSection">
+                    <label for="fmLineValue">Line</label>
+                    <input type="text" name="fmLineName" id="fmLineValue" tabindex="3">
+                </div>
+                <div id="fmDocNumber" class="inputSection">
+                    <label for="fmDocNumberValue">Document No.</label>
+                    <input type="text" name="fmDocNumberName" id="fmDocNumberValue" tabindex="4">
+                </div>
+                <div id="fmRevision" class="inputSection">
+                    <label for="fmRevisionValue">Revision</label>
+                    <input type="text" name="fmRevisionName" id="fmRevisionValue" tabindex="5">
+                </div>
+                <div id="fmRevisionDate" class="inputSection">
+                    <label for="fmRevisionDateValue">Revision Date</label>
+                    <input type="text" name="fmRevisionDateName" id="fmRevisionDateValue" tabindex="6">
+                </div>
+                <div id="fmReleaseBy" class="inputSection">
+                    <label for="fmReleaseByValue">Release by</label>
+                    <input type="text" name="fmReleaseByName" id="fmReleaseByValue" tabindex="7">
+                </div>
+                <div id="fmApproval" class="inputSection">
+                    <label for="fmApprovalValue">Approval</label>
+                    <input type="text" name="fmApprovalName" id="fmApprovalValue" tabindex="8">
+                </div>
+                <button type="submit" id="createButton">Create</button>
+
+            </div>
+            <div id="addItemForm">
+                <section class="leftColumn">
+                    <div id="item" class="inputSection">
+                        <label for="itemValue">Item To Inspect:</label>
+                        <input type="text" name="itemName" id="itemValue" tabindex="1">
+                    </div>
+                    <div id="requirement" class="requirementSection inputSection">
+                        <label for="requirementValue">Requirement:</label>
+                        <textarea name="requirementName" id="requirementValue" rows="3" tabindex="3"></textarea>
+                    </div>
+                    <div id="frequency" class="inputSection">
+                        <label for="frequencyValue">Frequency:</label>
+                        <input type="text" name="frequencyName" id="frequencyValue" tabindex="5">
+                        <!-- <br> -->
+                        <label for="startOfShift">Start Of Shift</label>
+                        <input type="checkbox" name="" id="startOfShift">
+                        <!-- <br> -->
+                        <label for="everyTwoHours">Every 2 Hours</label>
+                        <input type="checkbox" name="" id="everyTwoHours">
+                        <!-- <br> -->
+                        <label for="everyFourHours">Every 4 Hours</label>
+                        <input type="checkbox" name="" id="everyFourHours">
+                        <!-- <br> -->
+                        <label for="changeover">Changeover</label>
+                        <input type="checkbox" name="" id="changeover">
+                        <!-- <br> -->
+                        <label for="maintenanceEvent">Maintenance Event</label>
+                        <input type="checkbox" name="" id="maintenanceEvent">
+                    </div>
+                </section>
+                <section class="rightColumn">
+                    <div id="responsible" class="inputSection">
+                        <label for="responsibleValue">Responsible:</label>
+                        <input type="text" name="responsibleName" id="responsibleValue" tabindex="2">
+                    </div>
+                    <div id="gage" class="inputSection">
+                        <label for="gageValue">Gage:</label>
+                        <textarea name="gageName" id="gageValue" rows="3" tabindex="4"></textarea>
+                    </div>
+                    <div id="result" class="inputSection">
+                        <label for="resultValue">Result Type:</label>
+                        <select name="resultName" id="resultValue" tabindex="6">
+                            <option value="checkbox">Checkbox</option>
+                            <option value="passFail">Pass/Fail</option>
+                            <option value="numberInput">Number</option>
+                            <option value="textInput">Text</option>
+                        </select>
+                    </div>
+                    
+                    
+                </section>
+                <button type="submit" id="addButton">Add Item</button>
+            </div>
+
+            <div id="preview">
+                <div id="fmSheetHeader" class="sheetHeader"></div>
+            </div>
+            <br>
+            <div id="formPreview">
+                <div id="sampleDiv" class="sampleDivClass">
+                    <div class="col1"></div>
+                    <div class="col2">Item To Inspect</div>
+                    <div class="col3">Requirement / Gage</div>
+                    <div class="col4">Responsible</div>
+                    <div class="col5">Frequency</div>
+                    <div class="col6">Result</div>
+                </div>
+                <!-- <div id="item_1" class="sampleDivClass">
+                    <div class="col1">1</div>
+                    <div class="col2">E-Stop</div>
+                    <div class="col3">Verify Location / press E-stop during machine running. Each of the components in machine must stop.(include manual and auto of machine status)</div>
+                    <div class="col4">Operator</div>
+                    <div class="col5">Start of Shift</div>
+                    <div class="col6"><button class="okButton">OK</button><button class="okButton">Not Ok</button></div>
+                </div>
+                <div id="item_1" class="sampleDivClass">
+                    <div class="col1">2</div>
+                    <div class="col2">Light Curtain</div>
+                    <div class="col3">Verify Location / use the test pole to check the light curtain during machine running. Each of the components in machine must stop.(include manual and auto of machine status</div>
+                    <div class="col4">Operator</div>
+                    <div class="col5">Start of Shift</div>
+                    <div class="col6"><button class="okButton">OK</button><button class="okButton">Not Ok</button></div>
+                </div> -->
+            </div>
+
+            <!-- <div>
+                <input type="radio" name="newName">
+                <input type="radio" name="newName">
+                <input type="radio" name="newName">
+                <input type="radio" name="newName">
+                <input type="radio" name="newName">
+                <input type="range" id="helloRange">
+
+            </div> -->
+        </section>
+        <section id="rightSection">
+            <select name="language" id="lan">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="zh">Chinese</option>
+                <option value="mk">Macedonian</option>
+            </select>
+        </section>
+    </div>
+</body>
+</html>

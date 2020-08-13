@@ -1,0 +1,75 @@
+let fmData = [
+    [ "E-Stop", "Verify Location", "Visual", "Operator", "Start Of Shift", "check" ],
+    [
+        "Light Curtain",
+        "Verify Location",
+        "Visual",
+        "Operator",
+        "Start Of Shift",
+        "check"
+    ],
+    [
+        "Clean up none related things",
+        "",
+        "Visual",
+        "Operator",
+        "Start Of Shift",
+        "check"
+    ],
+    [
+        "All facilities in the right position and well labeled",
+        "",
+        "Visual",
+        "Operator",
+        "Start Of Shift",
+        "check"
+    ],
+    [
+        "Documentaton are placed in the right position and in the lates version",
+        "",
+        "Visual",
+        "Operator",
+        "Start Of Shift",
+        "check"
+    ],
+    [
+        "Laser Cover Lens OP140",
+        "Changed Lens",
+        "Visual",
+        "Operator",
+        "Start Of Shift",
+        "value"
+    ],
+    [
+        "Laser Cover Lens OP150",
+        "Changed Lens",
+        "Visual",
+        "Operator",
+        "Start Of Shift",
+        "value"
+    ],
+    ["Shield Gas", "20-50 psi", "Visual", "Operator", "Start Of Shift", "value"],
+    ['Penetration Depth OP140', '1.5mm Min', 'Microscope', 'Operator', 'Start of shift', 'passfail'],
+    ['Penetration Depth OP140', '1.5mm Min', 'Microscope', 'Operator', 'Hour 2', 'passfail'],
+    ['Penetration Depth OP140', '1.5mm Min', 'Microscope', 'Operator', 'Hour 4', 'passfail'],
+    ['Penetration Depth OP140', '1.5mm Min', 'Microscope', 'Operator', 'Hour 6', 'passfail'],
+    ['Penetration Depth OP140', '1.5mm Min', 'Microscope', 'Operator', 'Change Over', 'passfail'],
+    ['Penetration Depth OP140', '1.5mm Min', 'Microscope', 'Operator', 'Maintenance', 'passfail'],
+    ['Penetration Depth OP150', 'AHS 1.5mm Min / SH5 1.4mm Min', 'Microscope', 'Operator', 'Start of shift', 'passfail'],
+    ['Penetration Depth OP150', 'AHS 1.5mm Min / SH5 1.4mm Min', 'Microscope', 'Operator', 'Hour 2', 'passfail'],
+    ['Penetration Depth OP150', 'AHS 1.5mm Min / SH5 1.4mm Min', 'Microscope', 'Operator', 'Hour 4', 'passfail'],
+    ['Penetration Depth OP150', 'AHS 1.5mm Min / SH5 1.4mm Min', 'Microscope', 'Operator', 'Hour 6', 'passfail'],
+    ['Penetration Depth OP150', 'AHS 1.5mm Min / SH5 1.4mm Min', 'Microscope', 'Operator', 'Change Over', 'passfail'],
+    ['Penetration Depth OP150', 'AHS 1.5mm Min / SH5 1.4mm Min', 'Microscope', 'Operator', 'Maintenance', 'passfail'],
+    ['Weld Location', 'Centered on joint wihin +/- 0.15mm', 'Microscope', 'Operator', 'Start of shift', 'passfail'],
+    ['Weld Location', 'Centered on joint wihin +/- 0.15mm','Microscope', 'Operator', 'Hour 2', 'passfail'],
+    ['Weld Location', 'Centered on joint wihin +/- 0.15mm', 'Microscope', 'Operator', 'Hour 4', 'passfail'],
+    ['Weld Location', 'Centered on joint wihin +/- 0.15mm', 'Microscope', 'Operator', 'Hour 6', 'passfail'],
+    ['Weld Location', 'Centered on joint wihin +/- 0.15mm', 'Microscope', 'Operator', 'Change Over', 'passfail'],
+    ['Weld Location', 'Centered on joint wihin +/- 0.15mm', 'Microscope', 'Operator', 'Maintenance', 'passfail'],
+    ['Rotate Speed Check', 'AHS 20-48 / SH5 24-32', 'Visual check at control panel', 'Operator', 'Start of shift', 'value'],
+    ['Rotate Speed Check', 'AHS 20-48 / SH5 24-32', 'Visual check at control panel', 'Operator', 'Changeover', 'value'],
+    ['Laser Power Check', 'AHS - 1738-2246W / SH5 - 1236-1926W', 'Visual check at control panel', 'Operator', 'Start of Shift', 'value'],
+    ['Laser Power Check', 'AHS - 1738-2246W / SH5 - 1236-1926W', 'Visual check at control panel', 'Operator', 'Changeover', 'value'],
+    ['Verify loading Nest Tooling', 'Mesure the level of welding surface to the workbench', 'Maintenance / IPQC and Operator double confirm'],
+]

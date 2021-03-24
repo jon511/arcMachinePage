@@ -1,0 +1,57 @@
+body {
+    position: relative;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+
+.create-fm-containter {
+    place-items: center;
+
+}
+
+.create-fm-containter h1 {
+    position: sticky;
+    top: 0;
+    text-align: center;  
+}
+
+.entry-item {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #d3d3d3;
+    gap: 5px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    place-items: center;
+}
+
+.entry-item label {
+    font-size: 1.2rem;
+    margin-right: 1em;
+}
+
+.entry-item input {
+    font-size: 1.2rem;
+    flex-grow: 100;
+    pad: .25em;
+    border-color: #d3d3d3;
+    background-color: #d6d6d6;
+}
+
+
+@media screen and (min-width: 900px) {
+
+    main {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .entry-item {
+        display: flex;
+    }
+}
+
